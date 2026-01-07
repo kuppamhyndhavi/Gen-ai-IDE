@@ -146,7 +146,7 @@ const MainIDE = () => {
 
   return (
     <div data-testid="main-ide" className="h-screen flex flex-col bg-background text-foreground">
-      <Toaster position="top-right" />
+      <Toaster position="top-right" duration={2000} />
       
       {/* Toolbar */}
       <div data-testid="toolbar" className="h-14 border-b border-border flex items-center justify-between px-4 bg-card">
