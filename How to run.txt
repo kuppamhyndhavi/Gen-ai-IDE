@@ -1,0 +1,22 @@
+first in backend file
+pip install -r requirements.txt
+
+install mongo db
+
+then in backend
+python -m uvicorn server:app --reload
+
+the api will run this link
+http://127.0.0.1:8000/docs
+
+after this go to front end folder and open cmd there
+npm start
+
+githubtoken
+[REMOVED_FOR_SECURITY]
+
+API KEY
+[REMOVED_FOR_SECURITY]
+in admin cmd
+ollama pull deepseek-coder:6.7b
+ollama run deepseek-coder:6.7b

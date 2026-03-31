@@ -5,7 +5,7 @@ import time
 from datetime import datetime
 
 class GenAIIDEAPITester:
-    def __init__(self, base_url="https://codex-ai-2.preview.emergentagent.com"):
+    def __init__(self, base_url="http://localhost:8000"):
         self.base_url = base_url
         self.api_url = f"{base_url}/api"
         self.session_id = f"test-session-{int(time.time())}"
@@ -135,7 +135,7 @@ console.log(`2 + 2 = ${result}`);
             200,
             data={
                 "session_id": self.session_id,
-                "message": "Write a simple Python function to calculate factorial",
+                "messages": [{"role": "user", "content": "Write a simple Python function to calculate factorial"}],
                 "task_type": "generate"
             },
             timeout=60  # AI responses can take longer
@@ -166,7 +166,7 @@ print(result)
             200,
             data={
                 "session_id": self.session_id,
-                "message": "Debug this code",
+                "messages": [{"role": "user", "content": "Debug this code"}],
                 "code_context": buggy_code,
                 "task_type": "debug"
             },
