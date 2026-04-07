@@ -14,9 +14,7 @@ import tempfile
 import json
 from git import Repo
 import shutil
-import openai
 from contextlib import asynccontextmanager
-from openai import OpenAI
 ############################ollama
 import google.generativeai as genai
 import requests
