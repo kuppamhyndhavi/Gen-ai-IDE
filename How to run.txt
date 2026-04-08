@@ -13,11 +13,10 @@ after this go to front end folder and open cmd there
 npm start
 
 githubtoken
-[REDACTED]
+<REMOVED>
 
 API KEY
-[REDACTED]
-
+<REMOVED>
 
 in admin cmd
 ollama pull deepseek-coder:6.7b
