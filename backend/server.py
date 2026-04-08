@@ -30,7 +30,7 @@ import json
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env', override=True)
 
-mongo_url = os.environ["mongodb+srv://mail2vinay2004_db_user:JwYY5iacNCkMxAjf@hynd-cluster.otolx5t.mongodb.net/?retryWrites=true&w=majority&appName=hynd-cluster"]
+mongo_url = "mongodb+srv://mail2vinay2004_db_user:JwYY5iacNCkMxAjf@hynd-cluster.otolx5t.mongodb.net/?retryWrites=true&w=majority&appName=hynd-cluster"
 client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ['DB_NAME']]
 
